@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  selector: 'dairy-Feed',
+  templateUrl: 'dairyfeed.component.html',
+  styleUrls: ['dairyfeed.component.css']
 })
-export class AppComponent {
+export class DairyFeedComponent {
   title = 'app works!';
 }

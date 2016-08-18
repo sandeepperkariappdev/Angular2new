@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class PaymentService { 
 
-    // 3B 
+    
     payments:Array<any>;
 
-    // 3C
+
     constructor() {
         this.payments = [
             { age: 40, name: 'Jordan Houston' },
@@ -27,7 +27,7 @@ export class PaymentService {
         ];
     }
 
-    // 3D
+
     getPayments() {
         return this.payments;
     }

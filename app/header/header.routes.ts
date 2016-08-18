@@ -7,7 +7,7 @@
 // ];
 
 
-export const SideNavRoutes =[
+export const HeaderRoutes =[
     {
         path:'/Home',
         component:HomeComponent,

@@ -1,16 +1,13 @@
 import {Component} from '@angular/core';
-//import {ROUTER_PROVIDERS} from '@angular/router';
-//import {Routes, RouterModule} from '@angular/router';
-//import {DashboardComponent} from '../../app/dashboard.component/dashboard.component';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
-@Component({
-    selector:'side-nav',
-    styleUrls:['sidenav.component.css'],
-    templateUrl:'sidenav.component.html'          
+@Component({   
+    moduleId:module.id,
+  selector:'side-nav',
+  templateUrl: 'sidenav.component.html',
+  styleUrls: ['sidenav.component.css'] ,
+  directives: [ROUTER_DIRECTIVES]       
 })
-// directives:[Routes],
-    //providers:[RouterModule] 
-
 export class SideNavComponent{
     title = "side nav component";
 }
