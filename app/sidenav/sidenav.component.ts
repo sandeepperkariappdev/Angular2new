@@ -5,12 +5,12 @@ import {Component} from '@angular/core';
 
 @Component({
     selector:'side-nav',
-    styleUrls:['app/sidenav/sidenav.component.css'],
-    templateUrl:'app/sidenav/sidenav.component.html'          
+    styleUrls:['sidenav.component.css'],
+    templateUrl:'sidenav.component.html'          
 })
 // directives:[Routes],
     //providers:[RouterModule] 
 
 export class SideNavComponent{
-    
+    title = "side nav component";
 }
