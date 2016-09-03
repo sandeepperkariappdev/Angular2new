@@ -4,14 +4,15 @@
 
 
 
-<div> Payments</div>
+<div> Payments</div>    
             <div class="row inner-row white-background" >   
-<div class="row item-bottom-border" >
+                 <div *ngFor="let hero of heroes" class="row item-bottom-border" >
                     <div class="col-md-3">
                         <ul class="list-style">
                             <li><span>Policy Type</span></li>
                             <li>
-                                <a>Auto Policy # TX51251225</a>
+                                <!--Auto Policy # TX51251225-->
+                                <a> {{hero.name}}</a>
                             </li>
                         </ul>
                     </div>
@@ -32,7 +33,7 @@
                         <button>PayNow</button>
                     </div>
                 </div>
-                <div class="row item-bottom-border" >
+                <!--<div class="row item-bottom-border" >
                      <div class="col-md-3">
                         <ul class="list-style">
                             <li>Cycle Policy #</li>
@@ -55,8 +56,8 @@
                     <div class="col-md-3">
                         <button>PayNow</button>
                     </div>
-                </div>
-                </div>
-            <div class="col-footer white-background">
-                <label>* Recent policy changes may not be reflected in the amount due.Recent policy changes may not be reflected in the amount due.</label>
-            </div> 
+                </div>-->
+          </div>
+        <div class="col-footer white-background">
+            <label>* Recent policy changes may not be reflected in the amount due.Recent policy changes may not be reflected in the amount due.</label>
+        </div> 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import {PaymentComponent} from '../../app/payment/payment.component';
 import {ClaimsComponent} from '../../app/claims/claims.component';
 import {CardsComponent} from '../../app/cards/cards.component';
@@ -13,4 +13,10 @@ import {NeedHelpComponent} from '../../app/needhelp/needhelp.component';
 })
 export class HomeComponent {
   title = 'app works!';
+
+
+
+  constructor(){}
+
+  
 }
