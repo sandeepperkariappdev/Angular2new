@@ -1,21 +1,40 @@
 /* Varialble*/
 $comp-background:#fff;
 $borderColor:black;
+$homebackground : gray;
+$compFooterBorder: blue;
 .item-bottom-border{
    border-bottom:1px solid $borderColor;
        padding: 1%;
     margin: 0;
 }
+.display-inline-block{
+    display: inline-block;
+}
+.logout-span{
+    margin: 15px;
+    display: block;
+}
+.float-right{
+    float:right
+}
+.list-style{
+    list-style: none;
+}
 .custom-row{
-     margin:2% 0;
-     padding:2% 0;     
+     margin:1% 0;
+     padding:1% 0;     
 }
 .white-background{
     background: $comp-background;
 }
+.header-parent{
+    @extend .display-inline-block;
+    width: 100%;
+}
 .side-nav-parent{
     @extend .white-background;
-    height: 120em;    
+    height: 100em;    
 }
 .side-nav{
     @extend .white-background;
@@ -34,14 +53,14 @@ $borderColor:black;
     padding: 0 2%;
 }
 .border-top{
-    border-top:2px solid #000;
+    border-top:2px solid $borderColor;
 }
 .inner-row{
     @extend .border-top; 
     margin:0;
 }
 .inner-row-col{
-    margin: 4% 0.5%;
+    margin: 1% 0.5%;
     width: 49%;
 }
 .inner-row-col-1{
@@ -62,13 +81,13 @@ $borderColor:black;
   height: 20.7em;
 }
 .col-footer{
-    border-top:1px solid blue;
+    border-top:1px solid $compFooterBorder;
     text-align: center;
      padding: 2.3%;
 }
 .page-content{
-    margin-top: 2%;    
-    background: gray;
+    margin-top: 4%;    
+    background: $homebackground;
 }
 .col-header{
     margin-left: -15px;
@@ -76,9 +95,39 @@ $borderColor:black;
 .feed-col-2{
   padding:1% 0;
   ul {
-    border-left: 1px solid gray;
+    border-left: 1px solid $homebackground;
   }
 }
-.display-inline-block{
-    display: inline-block;
+.claims-child{
+    margin-top:30%; 
+    padding:0 30%;
+}
+.claims-sub-child{
+    @extend .claims-child;
+    color:#B8B3B3
+}
+.active-claims{
+    margin-top:14%; 
+    padding:0 30%;
+    color:#B8B3B3
+}
+
+.card{
+    background-color: #F8F8F8;
+    padding: 14%;
+}
+.card-parent{
+    padding: 9%;
+}
+
+.claim-number{
+    font-size: 47px;
+}
+.claims-border{
+    position: absolute;
+    top: 45%;   
+    height: 35%;
+    margin: 0px;
+    border: 1px solid #CBCACA !important;
+    border-top: 0px;
 }
